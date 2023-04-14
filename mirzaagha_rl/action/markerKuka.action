@@ -1,0 +1,11 @@
+#goal definition
+int32 find_marker
+---
+#result definition
+float64[] found_marker
+int32 ID
+---
+#feedback definition
+float64[] found_marker
+int32 ID
+bool marker

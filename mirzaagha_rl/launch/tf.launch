@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+
+
+	<node pkg="tf" type="static_transform_publisher" name="transformation" args="-0.096 0 0.546 0 0 0 base_footprint base_scan 100" /> 
+		
+	
+</launch>

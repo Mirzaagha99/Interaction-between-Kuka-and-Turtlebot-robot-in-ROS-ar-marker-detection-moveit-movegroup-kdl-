@@ -1,0 +1,20 @@
+# Move base node parameters. For full documentation of the parameters in this file, please see
+#
+#  http://www.ros.org/wiki/move_base
+#
+shutdown_costmaps: false
+
+controller_frequency: 4.0 #5.0 The rate in Hz at which to run the control loop and send velocity commands to the base.
+controller_patience: 2.0 #3.0 How long the controller will wait in seconds without receiving a valid control before
+# space-clearing operations are performed.
+
+planner_frequency: 2.0 #1.0
+planner_patience: 6.0 #5.0 How long the planner will wait in seconds in an attempt to find a valid plan before space-clearing operations are performed.
+
+oscillation_timeout: 10.0 #10
+oscillation_distance: 0.2 #0.2 How far in meters the robot must move to be considered not to be oscillating. 
+#Moving this far resets the timer counting up to the ~oscillation_timeout
+
+# local planner - default is trajectory rollout
+base_local_planner: "dwa_local_planner/DWAPlannerROS"
+

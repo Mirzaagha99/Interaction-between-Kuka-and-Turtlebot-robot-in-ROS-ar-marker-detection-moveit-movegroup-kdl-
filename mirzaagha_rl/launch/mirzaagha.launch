@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+	<include file="$(find mirzaagha_rl)/launch/world.launch"/> 
+
+	<include file="$(find mirzaagha_rl)/launch/gmapping.launch"/>  
+	
+	<include file="$(find mirzaagha_rl)/launch/move_base.launch"/> 
+	
+	<include file="$(find kuka_iiwa_config)/launch/move_group.launch"/> 
+ 	
+
+</launch>

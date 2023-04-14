@@ -1,0 +1,9 @@
+#goal definition
+int32 find_marker
+---
+#result definition
+int32 ID
+---
+#feedback definition
+int32 ID
+bool marker

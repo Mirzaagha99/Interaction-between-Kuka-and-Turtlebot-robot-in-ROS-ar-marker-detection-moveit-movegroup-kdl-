@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+	
+	<node name="move_kuka" pkg="mirzaagha_rl" type="move_kuka" respawn="false" output="screen"/>
+	
+	<node name="move_turtlebot" pkg="mirzaagha_rl" type="move_turtlebot" respawn="false" output="screen"/>
+  	
+
+</launch>

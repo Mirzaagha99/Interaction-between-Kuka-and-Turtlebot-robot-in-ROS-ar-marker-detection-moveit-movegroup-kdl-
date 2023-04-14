@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="marker_03">
+    <static>1</static>
+    <link name="marker">
+      <gravity>false</gravity>
+      <visual name="visual">
+        <geometry>
+          <box>
+             <size>0.54 0.54 0.006</size>
+            <!-- SIZE OF THE MARKER + MARGIN -->
+          </box>
+        </geometry>
+        <material>
+          <script>
+	    <uri>model://marker_03/material/scripts</uri>
+	    <uri>model://marker_03/material/textures</uri>
+            <name>Aruco/marker_03</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.54 0.54 0.12</size>
+            <!-- SIZE OF THE MARKER + MARGIN -->
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

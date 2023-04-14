@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mirzaagha_project
+    relative_path: urdf/kuka_iiwa_ctrl.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/kuka_iiwa.srdf
+  CONFIG:
+    author_name: mirzaagha
+    author_email: mirzaaghamichael@gmail.com
+    generated_timestamp: 1662650789

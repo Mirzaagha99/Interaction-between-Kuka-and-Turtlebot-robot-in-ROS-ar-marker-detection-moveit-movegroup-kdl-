@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+	
+	<node name="marker_turtlebot" pkg="mirzaagha_rl" type="marker_turtlebot" respawn="false" output="screen"/>
+	
+	<node name="marker_kuka" pkg="mirzaagha_rl" type="marker_kuka" respawn="false" output="screen"/>
+
+  	
+
+</launch>

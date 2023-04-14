@@ -1,0 +1,264 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+	 <scene>
+	    <shadows>0</shadows>
+  </scene>
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+	
+
+    <include>
+      <uri>model://floor</uri>
+			<name>floor</name>
+			<pose>10 0 0 0 0 0 </pose>
+    </include>
+
+	
+
+		<include>
+      <uri>model://w1</uri>
+			<name>w1_bottom</name>
+      <pose>-10 0.0 0.0 0 0.0 -1.57</pose>
+    </include>
+    
+
+		<include>
+      <uri>model://w1</uri>
+			<name>w1_left</name>
+      <pose>10 20 0.0 0 0.0 0.0</pose>
+    </include>
+
+
+		<include>
+      <uri>model://w1</uri>
+			<name>w1_top</name>
+      <pose>30 0.0 0.0 0 0.0 -1.57</pose>
+    </include>
+
+
+		<include>
+      <uri>model://w1</uri>
+			<name>w1_right</name>
+      <pose>10 -20 0.0 0 0.0 0.0</pose>
+    </include>
+		
+		<include>
+      <uri>model://w3</uri>
+			<name>w3_no_room_1</name>
+      <pose>-6 12.1 0.0 0 0.0 0.0</pose>
+    </include>
+
+
+		<include>
+      <uri>model://w3</uri>
+			<name>w3_no_room_2</name>
+      <pose>-1.9 16 0.0 0 0.0 1.57</pose>
+    </include>
+		
+		<include>
+      <uri>model://w2</uri>
+			<name>w3_room_1_1</name>
+      <pose>-1.9 10 0.0 0 0.0 1.57</pose>
+    </include>
+		
+
+		<include>
+      <uri>model://w2</uri>
+			<name>w3_room_1_2</name>
+      <pose>0.18 8.1 0.0 0 0.0 0.0</pose>
+    </include>
+		
+
+	<include>
+      <uri>model://w2</uri>
+			<name>w3_room_1_3</name>
+      <pose>7.5 8.1 0.0 0 0.0 0.0</pose>
+    </include>
+		
+		<include>
+      <uri>model://w4</uri>
+			<name>w4_room_1_3</name>
+      <pose>8.1 14 0.0 0 0.0 1.57</pose>
+    </include>
+		
+
+		<include>
+      <uri>model://w2</uri>
+			<name>w4_room_2_1</name>
+      <pose>10.17 8.11 0.0 0 0.0 0.0</pose>
+    </include>
+		
+		<include>
+      <uri>model://w2</uri>
+			<name>w4_room_2_2</name>
+      <pose>12.17 8.11 0.0 0 0.0 0.0</pose>
+    </include>
+		
+		<include>
+      <uri>model://w4</uri>
+			<name>w4_room_2_3</name>
+      <pose>19.4 14 0.0 0 0.0 1.57</pose>
+    </include>
+
+		<include>
+      <uri>model://w2</uri>
+			<name>w4_room_3_1</name>
+      <pose>21.4 8.11 0.0 0 0.0 0.0</pose>
+    </include>
+
+		<include>
+      <uri>model://w2</uri>
+			<name>w4_room_3_2</name>
+      <pose>27.9 8.11 0.0 0 0.0 0.0</pose>
+    </include>
+
+		<include>
+      <uri>model://w4</uri>
+			<name>w4_warehouse_1</name>
+      <pose>7.2 -13.9 0.0 0 0.0 1.57</pose>
+    </include>
+
+		<include>
+      <uri>model://w4</uri>
+			<name>w4_warehouse_2</name>
+      <pose>13.14 -1.0 0.0 0 0.0 0.0</pose>
+    </include>
+
+		<include>
+      <uri>model://w3</uri>
+			<name>w4_warehouse_3</name>
+      <pose>25.9 -1.0 0.0 0 0.0 0.0</pose>
+    </include>
+
+		<include>
+      <uri>model://w2</uri>
+			<name>w4_warehouse_4</name>
+      <pose>7.24 -3.1 0.0 0 0.0 1.57</pose>
+    </include>
+    
+    <!-- AR marker -->
+
+ <include>
+     <uri>model://marker_01</uri> 
+   <pose>29.886188 16.92 0.4 1.5707 -1.5707 -1.5707</pose> 
+    </include>
+
+    
+   <include>
+      <uri>model://marker_02</uri>
+      <pose>9.5 19.895 0.4 0 1.5707 1.5707</pose>
+    </include> 
+
+   
+   <include>
+     <uri>model://marker_03</uri>
+     <pose>-1.78 17.24 0.4 -1.5707 1.5707 1.5707</pose>	
+   </include>
+    
+    
+    <include>
+      <uri>model://picture_frame_large_1</uri>
+			<name>picture_frame_large_1</name>
+      <pose>22 19.83 0.1 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://picture_frame_large_2</uri>
+			<name>picture_frame_large_2</name>
+      <pose>6 19.83 0.1 0 0 -1.57</pose>
+    </include>
+
+
+    <include>
+      <uri>model://picture_frame_large_3</uri>
+			<name>picture_frame_large_3</name>
+      <pose>12 19.83 0.1 0 0 -1.57</pose>
+    </include>
+
+
+    <include>
+      <uri>model://table</uri>
+			<name>table</name>
+      <pose>28 5 0 0 0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://lamp_table_large</uri>
+			<name>lamp_table_large</name>
+      <pose>28 5 1.05 0 0 -1.57</pose>
+    </include>
+
+
+    <include>
+      <uri>model://table_marble</uri>
+			<name>table_marble</name>
+      <pose>26 -9 0.7 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://lamp_table_metal</uri>
+			<name>lamp_table_metal</name>
+      <pose>26 -9 1 0 0 -1.57</pose>
+    </include>
+
+
+    <include>
+      <uri>model://vase_large_2</uri>
+			<name>vase_large_2</name>
+      <pose>-5 -9 0 0 0 -1.57</pose>
+    </include>
+
+
+    <include>
+      <uri>model://vase_large_3</uri>
+			<name>vase_large_3</name>
+      <pose>-1 -9 0 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://vase_violet</uri>
+			<name>vase_violet</name>
+      <pose>3 -9 0.1 0 0 -1.57</pose>
+    </include>
+
+
+    
+ <include>
+   <uri>model://marker_900</uri> 
+   
+     <!-- POSA SCELTA 1 -->   
+
+  	<pose>18.8 -11.5 0.054 0 0 3.14 </pose> 
+
+
+    </include>  
+
+
+  </world>
+</sdf>
